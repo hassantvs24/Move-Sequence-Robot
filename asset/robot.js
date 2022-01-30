@@ -16,8 +16,8 @@ class Table {
 		let td = ''
   
 		for (let j = 0; j < columnsNumber; j++) {
-		  const cellPosition = i +','+ j
-		  const cellContent = i+'_'+j
+		  const cellPosition = j +','+ i
+		  const cellContent = j+'_'+i
   
 			td = `<td id="cell${cellContent}">${cellPosition}</td>`;
 		
