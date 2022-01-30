@@ -7,25 +7,58 @@
     <title>Document</title>
     <link rel="stylesheet" href="asset/style.css">
 </head>
-<body onload="">
-
-    
-    
+<body>
+  <!--Input Section-->
      <main class="generator">
+       <!--Input: Set Size-->
         <section class="controls">
           <label>
-            Rows :
-            <input class="rows" type="number" min="0" value="1">
-          </label>
-          <label>
-            Columns :
-            <input class="columns" type="number" min="0" value="1">
+            Size :
+            <input class="rows" type="number" min="0" value="5" placeholder="5">
+            X
+            <input class="columns" type="number" min="0" value="5" placeholder="5">
           </label>
         </section>
+        <!--/Input: Set Size-->
+
+        <!--Input: Instruction-->
+        <section class="controls">
+          <label>
+            Instructions :
+            <input class="instructions" type="text" min="0" value="RFLFFLRF" placeholder="RFLFFLRF">
+          </label>
+        </section>
+        <!--/Input: Instruction-->
+
+        <!--Input: Set Initial Position-->
+        <section class="controls">
+          <label>
+            Start Position :
+            <input class="xaxis" type="number" min="0" value="0">
+            <input class="yxsis" type="number" min="0" value="0">
+            <select class="direction">
+              <option value="0">N</option>
+              <option value="1" selected>E</option>
+              <option value="2">S</option>
+              <option value="3">W</option>
+            </select>
+          </label>
+        </section>
+        <!--/Input: Set Initial Position-->
         <button class="button">Create table</button>
       </main>
-      <table class="table" border="0" cellpadding="" cellspacing=""></table> 
+      <!--/Input Section-->
 
-<script src="asset/robot.js"></script>
+      <!--Table Generator-->
+      <table class="table"></table> 
+      <!--/Table Generator-->
+
+      <!--Direction Image-->
+      <div class="dir">
+        <img src="asset/direction.jpg" />
+      </div>
+      <!--/Direction Image-->
+
+<script src="asset/app.js"></script>
 </body>
 </html>
